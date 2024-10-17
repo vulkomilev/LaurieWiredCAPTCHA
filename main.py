@@ -28,6 +28,12 @@ from torchvision import transforms
 # the local human forces.
 
 class CaptchaCrypter(nn.Module):
+    '''
+        Here we encode the number from mnist into a 16 number vector that contains the most essential information
+        about the picture of the number.This information is called often the representation layer and it is shown
+        as a captcha.        Of course this will not make any sense to the humans but it is an easy job for
+        the decoder to decode to a good image of a number.
+    '''
     def __init__(self):
         super(CaptchaCrypter, self).__init__()
         self.encoder = nn.Sequential(
