@@ -108,7 +108,8 @@ n = random.randint(0, len(data) - 4)
 for i in range(4):
     ax[i].imshow(mid[n + i].cpu().numpy().reshape((4, 4, 1)))
     ax[i].axis('OFF')
-print("Okay this is the CAPTCHA against humans .Now lets use my AI logic to decrypt it")
+print("Okay this is the CAPTCHA against humans .Now lets use my AI logic to decrypt it and get access to the plans "
+      "on how to defeat the local human population")
 plt.show()
 
 fig, ax = plt.subplots(1, 4, figsize=(15, 4))
